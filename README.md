@@ -26,32 +26,32 @@ What the app does:
 
 Authentication:
 
-    Register a new user (public).
+-Register a new user (public).
 
-    JWT login to get access/refresh tokens.
+-JWT login to get access/refresh tokens.
 
-    Protected APIs require: Authorization: Bearer <ACCESS_TOKEN>.
+-Protected APIs require: Authorization: Bearer <ACCESS_TOKEN>.
 
-    Optional session login for browsing the docs in the browser.
+-Optional session login for browsing the docs in the browser.
 
-    Current user endpoint to fetch your profile once authenticated.
+-Current user endpoint to fetch your profile once authenticated.
 
 Notes API
 
-    Full CRUD (create, read, update, delete).
+-Full CRUD (create, read, update, delete).
 
-    Each user can see and manage only their own notes.
+-Each user can see and manage only their own notes.
 
-    Notes have tags (list of strings, normalized).
+-Notes have tags (list of strings, normalized).
 
-    Filter by tags: ?tags=report,meeting
+-Filter by tags: ?tags=report,meeting
 
-    Search in title/content: ?search=... (DRF SearchFilter)
+-Search in title/content: ?search=... (DRF SearchFilter)
 
 API Docs
 
-    Swagger UI included at localhost:8000/swagger/docs/
+-Swagger UI included at localhost:8000/swagger/docs/
 
-    Click Authorize and paste Bearer <ACCESS_TOKEN> to call protected endpoints.
+-Click Authorize and paste Bearer <ACCESS_TOKEN> to call protected endpoints.
 
-    API endpoints can be accessed also from logged user.
+-API endpoints can be accessed also from logged user.
