@@ -11,5 +11,6 @@ class NoteSerializer(serializers.ModelSerializer):
         read_only_fields = ["id", "created_at", "updated_at"]
 
     def validate_tags(self, value):
-        norm_tags = {str(v).strip().lower() for v in value if str(v).strip()}#normalizza: stringhe, trim, lowercase, uniche
+        norm_tags = {str(v).strip().lower() for v in value if str(v).strip()}#normalizza: stringhe, lowercase, uniche
+        norm_tags = {t.replace(" ", "") for t in norm_tags}
         return sorted(norm_tags)
